@@ -1,7 +1,8 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <math.h>
 #include "cmplx.h"
-const double pi = boost::math::constants::pi<double>();
+const double pi = M_PI;
 
 	void cmplx::polar(double amnt, double arg) {
 		//lets a complex nuber be initialized as polar coordinates
