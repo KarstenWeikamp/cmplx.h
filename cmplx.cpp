@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include "cmplx.h"
-constexpr double PI = 3.14159265358;
+const double pi = boost::math::constants::pi<double>();
 
 	void cmplx::polar(double amnt, double arg) {
 		//lets a complex nuber be initialized as polar coordinates
@@ -11,11 +11,11 @@ constexpr double PI = 3.14159265358;
 		this->arg = arg;
 	}
 	double cmplx::getRe() {
-		//Returns real part of nmbr
+		//Returns real part of number
 		return re;
 	}
 	double cmplx::getIm() {
-		//Returns imaginary part of nmbr
+		//Returns imaginary part of number
 		return im;
 	}
 	double cmplx::getAbs() {
